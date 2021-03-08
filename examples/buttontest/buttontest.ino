@@ -6,7 +6,7 @@ TTButton left_button   = TTButton(5);  // Button connected to pin 5, given group
 TTButton middle_button = TTButton(6);  // Button connected to pin 6, given group index 1
 TTButton right_button  = TTButton(7);  // Button connected to pin 7, given group index 2
 
-// Create a button group to which we can latter assign the buttons
+// Create a button group to which we can later assign the buttons
 TTButtonGroup button_group = TTButtonGroup();
 
 // Crate functions to assign to the button group
