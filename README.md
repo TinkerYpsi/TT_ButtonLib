@@ -70,7 +70,7 @@ void setup() {
   button_group.addFunction(1, right_button_set, -1, 3000, MAX_PRESS_TIME, myFunc_1);
   
   // Calls all() after all buttons are held for at least 1 second and the middle button is released
-  button_group.addFunction(2, all_button_set, 1, 0, MAX_PRESS_TIME, all);
+  button_group.addFunction(3, all_button_set, 1, 0, MAX_PRESS_TIME, all);
 }
 
 void loop() {
