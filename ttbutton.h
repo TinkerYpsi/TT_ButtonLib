@@ -32,8 +32,8 @@ class TTButtonGroup {
     public:
 
     typedef struct _btn_func {
-        uint32_t start_mask;
-        uint32_t stop_mask;
+        uint8_t start_mask;
+        uint8_t stop_mask;
         ButtonCallback callback;
         uint16_t min_press;
         uint16_t max_press;
@@ -55,14 +55,14 @@ class TTButtonGroup {
 
     private:
     unsigned long int mask_start_time;
-    uint32_t prev_mask;
+    uint8_t prev_mask;
     int prev_buttons_pressed;
     int button_count;
     int function_count;
     bool ignore_release;
-    uint32_t button_mask;
-    BTN_FUNC button_functions[32];
-    TTButton* buttons[32];
+    uint8_t button_mask;
+    BTN_FUNC button_functions[10];
+    TTButton* buttons[8];
 };
 
 #endif

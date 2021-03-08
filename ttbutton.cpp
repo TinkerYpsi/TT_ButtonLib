@@ -100,8 +100,8 @@ void TTButtonGroup::addFunction(
         ButtonCallback callback
     )
 {
-    uint32_t start_mask = 0;
-    uint32_t stop_mask = 0;
+    uint8_t start_mask = 0;
+    uint8_t stop_mask = 0;
 
     for(int i = 0; i < start_button_count; i++) {
         start_mask |= 1 << start_buttons[i];
