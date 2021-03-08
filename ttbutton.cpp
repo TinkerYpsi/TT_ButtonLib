@@ -86,6 +86,7 @@ void TTButtonGroup::update() {
                 // Once a function has been executed, don't execute any more
                 // based on subsequent button releases
                 this->ignore_release = true;
+                break;
             }
         }
     }
